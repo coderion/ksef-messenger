@@ -1,5 +1,7 @@
 # ksef-messenger
 
+Najnowsza wersja: **1.0.0**
+
 Cyklicznie sprawdza KSeF i w przypadku nowej faktury wysyła mailowe powiadomienie o nowej fakturze w KSeF
 
 ```
