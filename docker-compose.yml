@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  ksef-messenger:
+    container_name: ksef-messenger
+    image: coderion/ksef-messenger:1.0.0
+    restart: unless-stopped
+    volumes:
+      - /home/user/ksef:/ksef
+    environment:
+      - APP_CRON=0 */15 * * * *
+      - APP_DATA_PATH=/ksef
+      - APP_EMAIL_RECIPIENT=faktury@foo.bar
+      - APP_EMAIL_SMTP_HOST=smtp.foo.bar
+      - APP_EMAIL_SMTP_USERNAME=faktury@foo.bar
+      - APP_EMAIL_SMTP_PASSWORD=P@$sword
+      - APP_KSEF_NIP=1234567890
+      - APP_KSEF_CERT_PATH=/ksef/certificate.crt
+      - APP_KSEF_CERT_KEY=/ksef/keyfile.key
+      - APP_KSEF_CERT_PASSWORD=P@$sword
