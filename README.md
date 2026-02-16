@@ -1,6 +1,6 @@
 # ksef-messenger
 
-Najnowsza wersja: **1.0.0**
+Najnowsza wersja: [**1.0.0**](https://hub.docker.com/r/coderion/ksef-messenger/tags)
 
 Cyklicznie sprawdza KSeF i w przypadku nowej faktury wysyła mailowe powiadomienie o nowej fakturze w KSeF
 
