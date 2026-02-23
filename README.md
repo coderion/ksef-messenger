@@ -1,6 +1,6 @@
 # ksef-messenger
 
-Najnowsza wersja: [**1.0.0**](https://hub.docker.com/r/coderion/ksef-messenger/tags)
+Najnowsza wersja: [**1.0.1**](https://hub.docker.com/r/coderion/ksef-messenger/tags)
 
 Cyklicznie sprawdza KSeF i w przypadku nowej faktury wysyła mailowe powiadomienie o nowej fakturze w KSeF
 
@@ -10,7 +10,7 @@ version: '3.8'
 services:
   ksef-messenger:
     container_name: ksef-messenger
-    image: coderion/ksef-messenger:1.0.0
+    image: coderion/ksef-messenger:1.0.1
     restart: unless-stopped
     volumes:
       - /home/user/ksef:/ksef
